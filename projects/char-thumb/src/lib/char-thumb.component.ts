@@ -24,7 +24,7 @@ import { Component } from '@angular/core';
   ]
 })
 export class CharThumbComponent {
- public photoUrl!: string;
+  public photoUrl!: string;
   public name: string = '';
   public showInitials = false;
   public initials!: string;
@@ -51,23 +51,18 @@ export class CharThumbComponent {
     const words = this.name.trim().split(' ');
 
     let initials = '';
-    let initialsCount = 0;
 
-    if (words.length >= 1 && words[0].length > 0) {
+    if (words.length >= 1) {
       initials += words[0].charAt(0).toUpperCase();
-      initialsCount++;
     }
-    if (words.length >= 2 && words[1].length > 0) {
+    if (words.length >= 2) {
       initials += words[1].charAt(0).toUpperCase();
-      initialsCount++;
     }
-    if (words.length === 3 && initialsCount < 3) {
+    if (words.length === 3) {
       initials += words[2].charAt(0).toUpperCase();
-      initialsCount++;
     }
-    else if (words.length >= 2 && words[1].length >= 2) {
+    else if (words.length >= 2) {
       initials += words[1].charAt(1).toUpperCase();
-      initialsCount++;
     }
     this.initials = initials.replace(/[^a-zA-Z,0-9]/g, '');
   }
