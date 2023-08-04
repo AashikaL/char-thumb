@@ -1,12 +1,4 @@
-import { Component } from '@angular/core';
-
-@Component({
-  selector: 'lib-char-thumb',
-  template: ``,
-})
-export class CharThumbComponent {
-
-  charThumb(name: string, option: charThumbOption) {
+function charThumb(name: string, option: charThumbOption) {
     const words = name.split(' ');
     const wordCount = words.length;
   
@@ -30,8 +22,7 @@ export class CharThumbComponent {
       return initials;
     }
   }
-}  
-interface charThumbOption {
-  size: number;
-}
-
+  interface charThumbOption {
+    size: number;
+  }
+  export default charThumb;

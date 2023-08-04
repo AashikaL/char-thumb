@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import charThumb from 'projects/char-thumb/src/char-thumb';
+
+
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +11,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'char-thumb-demo';
+  constructor() {
+    const name = charThumb('aashika', { size: 1 });
+    console.log(name);
+  }
 }
+
+
+
+

@@ -5,6 +5,11 @@
     "@angular/common": "^16.0.0",
     "@angular/core": "^16.0.0"
   },
+  "keywords": ["char","thumbnail", "character-thumbnail","char-thumb"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AashikaL/char-thumb"
+  },
   "dependencies": {
     "tslib": "^2.3.0"
   },
