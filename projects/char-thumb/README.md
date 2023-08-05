@@ -1,24 +1,28 @@
-# CharThumb
+# What is this
+ This is character thumbnail. It is used to  create a thumbnail for  initial words. 
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
+# Installation
+`npm i char-thumbnail`
 
-## Code scaffolding
+# Usage
 
-Run `ng generate component component-name --project char-thumb` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project char-thumb`.
-> Note: Don't forget to add `--project char-thumb` or else it will be added to the default project in your `angular.json` file. 
+````
+   import charThumb from 'char-thumb'; 
 
-## Build
+   const name = charThumb('aashika',{size: 3});
 
-Run `ng build char-thumb` to build the project. The build artifacts will be stored in the `dist/` directory.
+   // => A00
 
-## Publishing
+   const name = charThumb('aashika lakshmanan',{size: 2});
 
-After building your library with `ng build char-thumb`, go to the dist folder `cd dist/char-thumb` and run `npm publish`.
+   // => AL
 
-## Running unit tests
+   const name = charThumb('aashika lakshmanan m',{size: 3});
 
-Run `ng test char-thumb` to execute the unit tests via [Karma](https://karma-runner.github.io).
+   // => ALM
 
-## Further help
+   const name = charThumb('aashika',{size: 1});
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+   // => A
+
+````

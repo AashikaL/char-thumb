@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import charThumb from 'projects/char-thumb/src/char-thumb';
-
 
 
 
@@ -11,10 +9,10 @@ import charThumb from 'projects/char-thumb/src/char-thumb';
 })
 export class AppComponent {
   title = 'char-thumb-demo';
-  constructor() {
-    const name = charThumb('aashika', { size: 1 });
-    console.log(name);
-  }
+  // constructor() {
+  //   const name = charThumb('aashika l', { size: 2 });
+  //   console.log(name);
+  // }
 }
 
 

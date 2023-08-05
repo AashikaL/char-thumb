@@ -5,8 +5,7 @@ import { Component } from '@angular/core';
   template: ``,
 })
 export class CharThumbComponent {
-
-  charThumb(name: string, option: charThumbOption) {
+   charThumb(name: string, option: charThumbOption) {
     const words = name.split(' ');
     const wordCount = words.length;
   

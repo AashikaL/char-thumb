@@ -11,6 +11,8 @@ import { CharThumbModule } from 'char-thumb';
   imports: [
     BrowserModule,
     CharThumbModule
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
