@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { CharThumbnail } from 'char-thumb';
 
 
 @Component({
@@ -9,10 +9,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'char-thumb-demo';
-  // constructor() {
-  //   const name = charThumb('aashika l', { size: 2 });
-  //   console.log(name);
-  // }
+  constructor() {
+    const charThumbnail = new CharThumbnail();
+    const thumbnail = charThumbnail.charThumb('character Name', { size: 1 });
+    const thumbnail1 = charThumbnail.charThumb('character Name', { size: 2 });
+    console.log('Thumbnail:', thumbnail);
+    console.log('Thumbnail:', thumbnail1);
+  }
 }
 
 

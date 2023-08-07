@@ -7,21 +7,23 @@
 # Usage
 
 ````
-   import charThumb from 'char-thumb'; 
+   import { CharThumbnail } from 'char-thumbnail';
 
-   const name = charThumb('aashika',{size: 3});
+   const charThumbnail = new CharThumbnail();
+
+   const name = charThumbnail.charThumb('aashika',{size: 3});
 
    // => A00
 
-   const name = charThumb('aashika lakshmanan',{size: 2});
+   const name = charThumbnail.charThumb('aashika lakshmanan',{size: 2});
 
    // => AL
 
-   const name = charThumb('aashika lakshmanan m',{size: 3});
+   const name = charThumbnail.charThumb('aashika lakshmanan m',{size: 3});
 
    // => ALM
 
-   const name = charThumb('aashika',{size: 1});
+   const name = charThumbnail.charThumb('aashika',{size: 1});
 
    // => A
 
